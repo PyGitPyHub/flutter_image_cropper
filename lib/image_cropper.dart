@@ -10,7 +10,7 @@
 /// Note that: this plugin is based on different native libraries depending on
 /// Android or iOS platform, so it shows different UI look and feel between
 /// those platforms.
-///
+/// TEST
 
 export 'src/cropper.dart';
 export 'src/options.dart';
