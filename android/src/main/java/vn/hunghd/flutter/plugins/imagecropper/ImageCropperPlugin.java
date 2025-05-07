@@ -1,3 +1,5 @@
+//-------------- VERSIONE 7.5.2025 ----------------
+
 package vn.hunghd.flutter.plugins.imagecropper;
 
 
@@ -32,15 +34,7 @@ public class ImageCropperPlugin implements MethodCallHandler, FlutterPlugin, Act
     /**
      * Plugin registration.
      */
-    public static void registerWith(PluginRegistry.Registrar registrar) {
 
-        ImageCropperPlugin plugin = new ImageCropperPlugin();
-
-        plugin.setupEngine(registrar.messenger());
-        ImageCropperDelegate delegate = plugin.setupActivity(registrar.activity());
-        registrar.addActivityResultListener(delegate);
-
-    }
 
     private void setupEngine(BinaryMessenger messenger) {
         MethodChannel channel = new MethodChannel(messenger, CHANNEL);
