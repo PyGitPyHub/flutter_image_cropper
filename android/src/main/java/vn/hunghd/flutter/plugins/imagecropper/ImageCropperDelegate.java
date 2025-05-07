@@ -1,4 +1,4 @@
-// _________________________ VERSION: 4.4.4 _______________________________
+// _________________________ VERSION: 7.5.2025 _______________________________
 package vn.hunghd.flutter.plugins.imagecropper;
 
 import android.app.Activity;
@@ -240,7 +240,7 @@ public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         if ("square".equals(name)) {
             return new AspectRatio(null, 1.0f, 1.0f);
         } else if ("original".equals(name)) {
-            return new AspectRatio(activity.getString(R.string.ucrop_label_original).toUpperCase(),
+            return new AspectRatio(activity.getString(com.yalantis.ucrop.R.string.ucrop_label_original).toUpperCase(),
                     CropImageView.SOURCE_IMAGE_ASPECT_RATIO, 1.0f);
         } else if ("3x2".equals(name)) {
             return new AspectRatio(null, 3.0f, 2.0f);
@@ -255,7 +255,7 @@ public boolean onActivityResult(int requestCode, int resultCode, Intent data) {
         } else if ("16x9".equals(name)) {
             return new AspectRatio(null, 16.0f, 9.0f);
         } else {
-            return new AspectRatio(activity.getString(R.string.ucrop_label_original).toUpperCase(),
+            return new AspectRatio(activity.getString(com.yalantis.ucrop.R.string.ucrop_label_original).toUpperCase(),
                     CropImageView.SOURCE_IMAGE_ASPECT_RATIO, 1.0f);
         }
     }
